@@ -12,15 +12,15 @@ The Smart Study Area is like a bunch of study rooms, not just libraries, with bo
 
 ## Classes and Subclasses
 
-### Activity
+#### Activity
 
-- **GroupDiscussionActivity:** An instance of an activity where multiple individuals engage in collaborative discussions within the study area.
+- GroupDiscussionActivity: An instance of an activity where multiple individuals engage in collaborative discussions within the study area.
   
-- **StudyingActivity:** Represents the act of focused individual or group study within the study environment.
+- StudyingActivity: Represents the act of focused individual or group study within the study environment.
 
-- **ReadingActivity:** Instances of reading-related activities taking place in the smart study area.
+- ReadingActivity: Instances of reading-related activities taking place in the smart study area.
 
-- **Suggestions:** A class encompassing suggestions provided to users, such as recommending study rooms or break times.
+- Suggestions: A class encompassing suggestions provided to users, such as recommending study rooms or break times.
 
 ### Devices
 
