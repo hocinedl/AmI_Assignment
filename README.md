@@ -120,3 +120,14 @@ Represents the current state of the smart study area, in terma of availability.
 ### SWRL Rules
 SWRL rules are the rules guiding and orchestrating interactions between entities. These rules empower the system to make intelligent inferences, enhancing the overall adaptability and responsiveness of the study environment.
 ![Capture d’écran (111)](https://github.com/hocinedl/AmI_Assignment/assets/114445094/91736b42-5ea2-4283-a876-aec07abd14c1)
+
+
+### Example
+
+For a student who prefers Reading Activity, and stays for 6 hours:
+![Capture d’écran (112)](https://github.com/hocinedl/AmI_Assignment/assets/114445094/3beb6fc0-a9d1-4f73-87a5-cd42d84ab768)
+
+The program make him go to the Quiet Study Room and to choose one of the four desks, also it suggests Breake.
+
+
+
