@@ -1,0 +1,1678 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom/"
+     xml:base="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:SmartStudyRoom="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CanGoTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CanGoTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#DetectsNoise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#DetectsNoise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasToGoto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasToGoto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Is">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#IsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#IsIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#PersonIsDoing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#PersonIsDoing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggests -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggests">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#SuggestsActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#SuggestsActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TurnOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TurnOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Adjust_LightningTo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Adjust_LightningTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasTmp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasTmp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StaysFor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StaysFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasCapacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasLighting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasLighting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasNoiseLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasNoiseLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#isLocatedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#isLocatedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#isUsable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#isUsable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#. -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#.">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Ac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Ac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeStudyRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeStudyRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietStudyRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Devices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Devices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#GroupDiscussionActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#GroupDiscussionActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Heaters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Heaters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietStudyRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietStudyRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#ReadingActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#ReadingActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#State"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasTmp"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyingActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyingActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggestions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggestions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StaysFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#AC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#AC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Ac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Availabe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Availabe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeRoom1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeRoom1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeStudyRoom"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor1"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor1"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor1"/>
+        <SmartStudyRoom:HasTmp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</SmartStudyRoom:HasTmp>
+        <SmartStudyRoom:hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</SmartStudyRoom:hasCapacity>
+        <SmartStudyRoom:hasNoiseLevel>High</SmartStudyRoom:hasNoiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeRoom2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeRoom2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeStudyRoom"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor2"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor2"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor2"/>
+        <SmartStudyRoom:HasTmp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</SmartStudyRoom:HasTmp>
+        <SmartStudyRoom:hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</SmartStudyRoom:hasCapacity>
+        <SmartStudyRoom:hasNoiseLevel>High</SmartStudyRoom:hasNoiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desk4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</SmartStudyRoom:StaysFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</SmartStudyRoom:StaysFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</SmartStudyRoom:StaysFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Faculty"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</SmartStudyRoom:StaysFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#GroupDiscussionActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Heater -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Heater">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Heaters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietRoom1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietRoom1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietStudyRoom"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor3"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor3"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor3"/>
+        <SmartStudyRoom:HasTmp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.00</SmartStudyRoom:HasTmp>
+        <SmartStudyRoom:hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</SmartStudyRoom:hasCapacity>
+        <SmartStudyRoom:hasNoiseLevel>Low</SmartStudyRoom:hasNoiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietRoom2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietRoom2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietStudyRoom"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#LightSensor4"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#NoiseSensor4"/>
+        <SmartStudyRoom:hasSensor rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor4"/>
+        <SmartStudyRoom:HasTmp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</SmartStudyRoom:HasTmp>
+        <SmartStudyRoom:hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</SmartStudyRoom:hasCapacity>
+        <SmartStudyRoom:hasNoiseLevel>Low</SmartStudyRoom:hasNoiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</SmartStudyRoom:StaysFor>
+        <SmartStudyRoom:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55555</SmartStudyRoom:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</SmartStudyRoom:StaysFor>
+        <SmartStudyRoom:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66666</SmartStudyRoom:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</SmartStudyRoom:StaysFor>
+        <SmartStudyRoom:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33333</SmartStudyRoom:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Student"/>
+        <SmartStudyRoom:Prefers rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+        <SmartStudyRoom:StaysFor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</SmartStudyRoom:StaysFor>
+        <SmartStudyRoom:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99999</SmartStudyRoom:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggest_Break -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggest_Break">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggestions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggest_lunch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggest_lunch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggestions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TmpSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#ReadingActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyingActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#GroupDiscussionActivity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#ReadingActivity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyingActivity"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasTmp"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TurnOn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#AC"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Sensors"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasTmp"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#TurnOn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Heater"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasCapacity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#."/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2>There are enough places</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#."/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2>There are enough places</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Is"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Availabe"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeStudyRoom"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Is"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Availabe"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasToGoto"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#IsIn"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasLighting"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2>Low</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Desks"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasToGoto"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CanGoTo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#readd"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasToGoto"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietRoom1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Is"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Availabe"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#State"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Availabe"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#studying"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#HasToGoto"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Activity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#PersonIsDoing"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#QuietStudyRoom"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#hasLighting"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                        <swrl:argument2>Low</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Prefers"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeRoom1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StudyRoom"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#CollaborativeRoom1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#SuggestsActivity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Group_project"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#StaysFor"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#w"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#SuggestsActivity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hocine/ontologies/2023/10/SmartStudyRoom#Suggest_Break"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
