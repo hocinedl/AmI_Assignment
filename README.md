@@ -8,7 +8,7 @@ Ontology is a way to represent knowledge about a particular domain and the relat
 
 ## My application (Smart Study Area)
 
-The Smart Study Area is like a bunch of study rooms, not just libraries, with books. It helps students and faculty (professors, researchers, etc.) by making their work or study more comfy. It suggests the best study room based on what they like and what they're doing. It even recommends break and lunch times to keep users comfy. It also takes care of room heating and adjusts desk lighting depending on what the user is doing, whether it's studying, reading, or group work.
+The Smart Study Area is like a bunch of study rooms. It helps students and faculty (professors, researchers, etc.) by making their work or study more comfy. It suggests the best study room based on what they like and what they're doing. It even recommends break and lunch times to keep users comfy. It also takes care of room heating and adjusts desk lighting depending on what the user is doing, whether it's studying, reading, or group work.
 
 ### Classes and Subclasses
 
@@ -61,25 +61,19 @@ Represents the current state of the smart study area, in terma of availability.
 
 - Represents the action of turning on a device, such as Ac and Heater.
 
-#### UsesStudyRoom
 
-- Establishes a relationship between a person and a study room, indicating that the person is using the specified study room.
+#### PersonIsDoing
+
+- Represents the activity of the person.
 
 #### Prefers
 
 - Indicates the preference of a user (faculty or student) for certain conditions or features within the smart study area.
 
-#### Suggests
-
-- Denotes a suggestion made by the system, possibly recommending a specific action or feature to a user.
-
-#### SuggestsActivity
-
-- Links the system to an activity suggestion, indicating that the system suggests a particular activity to a user.
 
 #### HasToGoto
 
-- Represents the directive for a person to go to a specific location, often a study room or area within the study environment.
+- Represents the directive for a person to go to a specific location, a study room  within the study environment.
 
 #### Is
 
@@ -89,15 +83,19 @@ Represents the current state of the smart study area, in terma of availability.
 
 - Indicates the containment or location of an entity within another entity, such as a person being in a study room.
 
+#### SuggestsActivity
+
+- Indicates the containment or location of an entity within another entity, such as a person being in a study room.
+
 ### Data Properties
 
 #### HasTmp
 
-- Specifies the temperature of a particular entity, often used in conjunction with temperature sensors.
+- Specifies the temperature of the study room, it is measured by Temperature sensors.
 
 #### Adjust_LightningTo
 
-- Indicates the action of adjusting lighting conditions to a specific level, based on user preferences or environmental factors.
+- Indicates the action of adjusting lighting conditions to a specific level, based on user preferences or type of study room.
 
 #### hasCapacity
 
@@ -105,11 +103,11 @@ Represents the current state of the smart study area, in terma of availability.
 
 #### hasNoiseLevel
 
-- Specifies the noise level in a study room, often measured by noise sensors.
+- Specifies the noise level in a study room, it is measured by noise sensors.
 
 #### hasLighting
 
-- Specifies the lighting conditions in a study room, providing information about the ambient illumination.
+- Specifies the lighting conditions in a study room, it is measured by Light sensors.
 
 #### hasID
 
@@ -119,3 +117,6 @@ Represents the current state of the smart study area, in terma of availability.
 
 - Specifies the duration for which a person stays in a particular study room.
 
+### SWRL Rules
+SWRL rules are the rules guiding and orchestrating interactions between entities. These rules empower the system to make intelligent inferences, enhancing the overall adaptability and responsiveness of the study environment.
+![Capture d’écran (111)](https://github.com/hocinedl/AmI_Assignment/assets/114445094/91736b42-5ea2-4283-a876-aec07abd14c1)
